@@ -170,6 +170,10 @@ section {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     line-height: 1;
 }
@@ -1378,6 +1382,11 @@ table.alt tfoot {
     color: #ffffff;
 }
 
+.poptrox-popup .caption a {
+    text-decoration: none;
+    color: white;
+}
+
 .poptrox-popup .loader {
     -moz-animation: spinner 1s infinite linear !important;
     -webkit-animation: spinner 1s infinite linear !important;
@@ -1435,9 +1444,15 @@ body.touch .poptrox-popup .nav-next {
 @media screen and (max-width: 736px) {
     .poptrox-popup:before {
         display: none;
+        position: absolute;
     }
-    .poptrox-popup .caption {
+    .poptrox-popup .caption:not(:nth-child(3)) {
         display: none !important;
+    }
+    .poptrox-popup .caption:nth-child(3) {
+        height: 11rem;
+        font-size: 8px;
+        position: fixed;
     }
     .poptrox-popup .closer,
     .poptrox-popup .nav-previous,
@@ -1663,6 +1678,12 @@ body.is-preload #header {
     #header nav>ul>li a {
         font-size: 0.9em;
         padding: 0 1.15em;
+    }
+    #main .thumb>a.active>button {
+        position: absolute;
+        border-radius: 100%;
+        content: click;
+        display: block !important;
     }
 }
 
