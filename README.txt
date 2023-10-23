@@ -19,8 +19,10 @@ aj@lkn.io | @ajlkn
 
 Credits:
 
-	Demo Images:
+	Stock Images:
 		Unsplash (unsplash.com)
+		Pexels (pexels.com)
+		Freepik (freepik.com)
 
 	Icons:
 		Font Awesome (fontawesome.io)
